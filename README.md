@@ -16,3 +16,6 @@ Install docker first, then:
 You can provide additional arguments to build and start scripts.
 
 To commit changes after leaving the container run `./commit.sh`.
+
+To run another CLI run `./exec.sh`.
+
