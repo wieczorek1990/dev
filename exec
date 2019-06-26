@@ -1,8 +1,7 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-dir=$(dirname $(readlink -f $0))
+dir="$(cd "$( dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 name=$(basename ${dir})
 
 docker start ${name}
 docker exec -it "$@" ${name} /usr/bin/fish
-
